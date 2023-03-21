@@ -1,0 +1,5 @@
+<launch>
+    <node name="livox_projector"  pkg="ros_detection_tracking" type="livox_projector" output="screen" />
+
+    <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d $(find ros_detection_tracking)/launch/test.rviz" />
+</launch>
